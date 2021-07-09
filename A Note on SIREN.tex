@@ -12,7 +12,7 @@ However, this necessitates reconsidering some of the assumptions about what cons
 
 Furthermore, independently of this the method described by Sitzmann et al. can be sped up greatly by reducing the learning rate during training. In all experiments we train use an initial learning rate of $2\cdot 10^{-4}$ with halving after MSE encounters plateaus lasting 40 epochs.
 
-Low-variance initializations for SIREN of the type used by Sitzmann et al. does however remain relevant because of its good performance before learning rate reduction.
+Low-variance initializations for SIREN of the type used by Sitzmann et al. do however remain relevant because of their good performance before learning rate reduction.
 
 {\bf Forward propagation in SIRENs}
 
@@ -63,7 +63,7 @@ Treating the gradients $\frac{\partial E}{\partial f(x)_k}$ as inputs and the gr
 
 Over many fully connected layers their pre-activations, i.e. gradients before the dual activation function is applied will become approximately normal distributed: when the input distribution has high variance it will be approximately uniformly distributed on a wide interval, and such a distribution transformed by the cosine will be approximately $\text{Arcsine}(-1,1)$ distributed. Consequently this will lead to approximately normal distributed pre-activations in the dual, backwards network.
 
-However, for the cosine of zero-centred normal distribution to be approximately $\text{Arcsine}(-1,1)$ this distribution must have higher variance than for the sine of the same distribution to be $\text{Arcsine}(-1,1)$ distributed. This can be seen by considering the variance $\text{Var}\left[\cos(kZ)\right] = \frac{1}{2} + \frac{1}{2}e^{-2k^2}-e^{-k^2}$ to the variance $\text{Var}\left[\sin(kZ)\right]=\frac{1}{2}(1-e^{-2k^2})$.
+However, for the cosine of zero-centred normal distribution to be approximately $\text{Arcsine}(-1,1)$ this distribution must have higher variance than for the sine of the same distribution to be $\text{Arcsine}(-1,1)$ distributed. This can be seen by comparing the variance $\text{Var}\left[\cos(kZ)\right] = \frac{1}{2} + \frac{1}{2}e^{-2k^2}-e^{-k^2}$ to the variance $\text{Var}\left[\sin(kZ)\right]=\frac{1}{2}(1-e^{-2k^2})$.
 
 \begin{center}
 \begin{tikzpicture}
@@ -74,7 +74,7 @@ However, for the cosine of zero-centred normal distribution to be approximately 
 \end{tikzpicture}
 \end{center}
 
-The black curve show the variance of the cosine transformed zero-centred normal distribution and of the sine-transformed zero-centred normal distribution as a function of the standard deviation of the input distribution.
+The black curve shows the variance of a cosine transformed zero-centred normal distribution and of the red that of a sine-transformed zero-centred normal distribution as a function of the standard deviation of that distribution.
 
 {\bf The convergence of the pre-activations to normal distribution}
 
@@ -171,7 +171,7 @@ The graph below shows training runs with $N(0,c^2/n)$ weight initialization and 
 
 %The graph shows PSNRs during training runs of SIRENs with a heavily scaled first layer and $c=\sqrt{6}$. Black: $\sin(\cdot)$ activation function. Red: $\sin(\frac{\pi}{2}\cdot)$ activation function. Pink: $\sin(1.7\cdot)$ activation function. Blue: $\sin(1.8\cdot)$ activation function. This is equivalent to $c=\sqrt{6}$ $c=\frac{\pi}{2}\sqrt{6}$ $c=1.7\sqrt{6}$ and $c=1.8\sqrt{6}$ respectively.
 
-{\bf Derivation of the formula for \boldmath$E[\sin(kZ)^2]$}
+{P.S. \bf Derivation of the formula for \boldmath$E[\sin(kZ)^2]$}
 
 We give the derivation of the formula for $\mathbb{E}[\sin(kZ)^2]$. Consider a mean of a particular transformed Wiener process $$f(t)=\mathbb{E}\left[\sin^2(cW_t)\right].$$
 
@@ -239,7 +239,7 @@ We can conclude that
 $$\mathbb{E}\left[\sin(cZ)^2\right]=\frac{1-e^{-2c^2}}{2}.$$
 
 
-{\bf Derivation of the formula for \boldmath$\text{Var}\left[\cos(cZ)\right]$}
+{P.P.S. \bf Derivation of the formula for \boldmath$\text{Var}\left[\cos(cZ)\right]$}
 
 In the calculation of $\mathbb{E}[\sin(cZ)^2]$ we obtained two results that are relevant also for this calculation, that
 
