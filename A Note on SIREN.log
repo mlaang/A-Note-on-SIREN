@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.10)  9 JUL 2021 21:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.10)  9 JUL 2021 21:51
 entering extended mode
 **"./A Note on SIREN.tex"
 (A Note on SIREN.tex
@@ -496,7 +496,7 @@ File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count279
 \l__pdf_internal_box=\box59
 )
-No file "A Note on SIREN".aux.
+(A Note on SIREN.aux)
 \openout1 = `"A Note on SIREN.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -513,7 +513,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
-ABD: EveryShipout initializing macros
+ ABD: EveryShipout initializing macros
 (C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count280
@@ -569,8 +569,8 @@ al-iza-tion is $\OMS/cmsy/m/n/10 U\OT1/cmr/m/n/10 [\OMS/cmsy/m/n/10  \OML/cmm/m
 [9] (shifteduniform.tex) (shiftednormal.tex) [10] [11] [12] [13]
 (A Note on SIREN.aux) ) 
 Here is how much of TeX's memory you used:
- 22914 strings out of 480241
- 597584 string characters out of 2890059
+ 22916 strings out of 480241
+ 597953 string characters out of 2890059
  2381238 words of memory out of 3000000
  39080 multiletter control sequences out of 15000+600000
  407886 words of font info for 44 fonts, out of 8000000 for 9000
@@ -588,7 +588,7 @@ lic/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
 10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "A Note on SIREN.pdf" (13 pages, 996915 bytes).
+Output written on "A Note on SIREN.pdf" (13 pages, 996949 bytes).
 PDF statistics:
  100 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
