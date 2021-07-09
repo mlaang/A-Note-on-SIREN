@@ -34,7 +34,7 @@ if(!file.exists("r.rds")) {
   saveRDS(r, "r.rds")
 } else r <- readRDS("r.rds")
 
-plot((1:5000)/500, r,type="l",col="blue")
+plot((1:5000)/500, r,type="l",col="blue", xlab="c", ylab="$\\frac{1}{20}\\sum_{k=1}^{20} \\frac{|\\sigma_k-c/\\sqrt{6}|}{c/\\sqrt{6}}$")
 lines((1:5000)/500, q)
 
 library(tikzDevice)
@@ -43,6 +43,6 @@ options(tikzMetricPackages = c("\\usepackage[utf8]{inputenc}","\\usepackage[T1]{
 
 
 tikz('forward_variance_deviation.tex',width=5,height=3.5)
-plot((1:5000)/500, r,type="l",col="blue")
+plot((1:5000)/500, r,type="l",col="blue", xlab="c", ylab="$\\frac{1}{20}\\sum_{k=1}^{20} \\frac{|\\sigma_k-c/\\sqrt{6}|}{c/\\sqrt{6}}$")
 lines((1:5000)/500, q)
 dev.off()
