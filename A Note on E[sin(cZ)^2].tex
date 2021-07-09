@@ -1,0 +1,106 @@
+\documentclass{letter}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+We are concerned with the variance of zero-centred normal distributed random variables transformed by the sine. Therefore we consider a mean of a particular transformed Wiener process $$f(t)=\mathbb{E}\left[\sin^2(cW_t)\right].$$
+
+Knowing the derivatives  $$\frac{d}{dx}\sin^2(cx)=2c\sin(cx)\cos(cx)=c\sin(2cx)$$. $$\frac{d^2}{dx^2}\sin(x)^2 = 2c^2\cos(2cx),$$
+
+we may apply Itô's lemma
+
+\begin{equation*}
+\begin{split}
+\sin^2(cW_t) &= \int_0^t c\sin(2cW_s)dW_s + \frac{1}{2}\int_0^t 2c^2\cos(2cW_s)ds =\\
+&=\int_0^t c\sin(2cW_s)dW_s + \int_0^t c^2\cos(2cW_s)ds.
+\end{split}
+\end{equation*}
+
+Consequently
+
+$$f(t)=c^2\int_0^t\mathbb{E}\left[\cos(2cW_s)\right]ds.$$
+
+Now, consider
+
+$$g(t,u)=\mathbb{E}\left[\cos(uW_t)\right].$$
+
+Applying Itô's lemma we obtain
+
+\begin{equation*}
+\begin{split}
+g(t,u)&=\mathbb{E}\left[\cos(u(W_s))\right]=\mathbb{E}\left[\frac{1}{2}\int_0^t-u^2\cos(uW_s)ds\right]=\\
+&=-\frac{1}{2}u^2\int_0^t\mathbb{E}\left[\cos(uW_s)\right]ds=-\frac{1}{2}u^2 \int_0^tg(s,u)ds.
+\end{split}
+\end{equation*}
+
+Thus
+
+$$\frac{\partial g}{\partial t}\left(t,u\right)=-\frac{1}{2}u^2 g\left(t,u\right)$$
+\newpage
+
+and
+
+$$g(t,u)=C(u)e^{-\frac{1}{2}u^2t}$$.
+
+Since
+
+$$g(0,u)=1$$
+
+We have
+
+$$C(u)=1$$
+
+and thus that
+
+$$g(t,u)=e^{-\frac{1}{2}u^2t}.$$
+
+Thus
+
+\begin{equation*}
+\begin{split}
+f(t) & =c^2\int_0^t\mathbb{E}\left[\cos(2cW_s)\right]ds=c^2\int_0^tg(t,2c)=\\
+&=c^2\int_0^te^{-\frac{1}{2}4c^2t}=c^2\int_0^te^{-2c^2t}=\\
+&=c^2\frac{e^{-2tc^2}-1}{-2c^2}=\frac{1-e^{-2c^2t}}{2}.
+\end{split}
+\end{equation*}
+
+We can conclude that
+
+$$\mathbb{E}\left[\sin(cZ)^2\right]=\frac{1-e^{-2c^2}}{2},$$
+
+{\bf Calculation of \boldmath$\text{Var}\left[\cos(cZ)\right]$}
+
+In the calculation of $\mathbb{E}[\sin(cZ)^2]$ we obtained two results that are relevant also for this calculation, that
+
+$$\mathbb{E}[\cos(uW_t)]=e^{-\frac{1}{2}u^2t}$$
+
+and the conclusion of the previous calculation, that
+
+$$\mathbb{E}[\sin(cZ)^2]=\frac{1-e^{-2c^2}}{2}.$$
+
+Because
+
+$$\mathbb{E}\left[\sin(cZ)^2+\cos(cZ)^2\right]=1$$
+
+it immediately follows that
+
+\begin{equation*}
+\begin{split}
+\mathbb{E}\left[\cos(cZ)^2\right]&=1-\mathbb{E}\left[\sin(cZ)^2\right]=\\
+&=1-\frac{1-e^{-2c^2}}{2}=\frac{1}{2}+\frac{1}{2}e^{-2c^2}.
+\end{split}
+\end{equation*}
+
+Using that
+
+$$\text{Var}\left[X\right]=\mathbb{E}\left[\left(X-\mathbb{E}\left[X\right]\right)^2\right]=\mathbb{E}[X^2]-\mathbb{E}[X]^2$$
+
+we obtain
+
+\begin{equation*}
+\begin{split}
+\text{Var}\left[\cos\left(cZ\right)\right]&=\frac{1}{2}+\frac{1}{2}e^{-2c^2}-\left(e^{-\frac{1}{2}c^2}\right)^2=\\
+&=\frac{1}{2}+\frac{1}{2}e^{-2c^2}-e^{-c^2}
+\end{split}
+\end{equation*}
+
+\end{document}

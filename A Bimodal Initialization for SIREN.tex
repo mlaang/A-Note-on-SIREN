@@ -1,0 +1,44 @@
+\documentclass{letter}
+\usepackage{amsmath,amssymb}
+\begin{document}
+{\boldmath$\mathbf \mathbb{E}\left[\exp\left(t\sin(cW_t)\right)\right]$}
+
+Let
+
+$$f(x)=\exp\left(t\sin\left(cx\right)\right)$$
+
+then
+
+$$f'(x)=\exp\left(t\sin\left(cx\right)\right)\cos\left(cx\right)c$$
+
+$$f''(x)=c^2\left(\cos\left(cx\right)-\sin\left(cx\right)\right)\exp\left(t\sin\left(cx\right)\right).$$
+
+Thus
+
+$$E[f\left(W_t\right)] = \frac{1}{2}c^2\int_0^t \mathbb{E}\left[\left(\cos(cW_s)-\sin(cW_s)\right)\exp\left(t\sin\left(cW_s\right)\right)\right]ds.$$
+
+
+Let
+
+$$g(x)=\left(a\cos(x)+b\sin(x)\right)\exp(t\sin\left(cx\right))$$
+
+then
+
+
+Let $Z$ be a standard normal distributed random variable. We seek a random variable $X$ such that
+
+$$\mathbb{E}[\exp(itX\sin(cZ))]=\mathbb{E}[\exp(itZ)].$$
+
+Conditioning we obtain
+
+$$\mathbb{E}[\mathbb{E}[\exp(itX\sin(cZ))|X]]=\mathbb{E}[\exp(itZ)].$$
+
+Let
+
+$$f(x,t)=\mathbb{E}[\exp(x\sin(cW_t))].$$
+
+Then
+
+$$f(x,t)$$
+
+\end{document}
