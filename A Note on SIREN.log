@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.10)  10 JUL 2021 01:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.10)  10 JUL 2021 11:03
 entering extended mode
 **"./A Note on SIREN.tex"
 (A Note on SIREN.tex
@@ -553,9 +553,9 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 {C:/Users/microstar/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-[2] [3] (qqplot.tex) [4] (forward_variance_deviation.tex)
-(backward_variance_deviation.tex) [5] (forward_variance_deviation_normal.tex)
-(backward_variance_deviation_normal.tex) [6]
+[2] [3] (qqplot.tex) [4] (forward_variance_deviation.tex) [5]
+(backward_variance_deviation.tex) [6] (forward_variance_deviation_normal.tex)
+(backward_variance_deviation_normal.tex)
 Overfull \hbox (22.7172pt too wide) in paragraph at lines 130--131
 []\OT1/cmr/m/n/10 These sec-ond two graphs re-late to the case where the ini-ti
 al-iza-tion is $\OMS/cmsy/m/n/10 U\OT1/cmr/m/n/10 [\OMS/cmsy/m/n/10  \OML/cmm/m
@@ -566,12 +566,12 @@ al-iza-tion is $\OMS/cmsy/m/n/10 U\OT1/cmr/m/n/10 [\OMS/cmsy/m/n/10  \OML/cmm/m
 (backward_variance_deviation_shifted.tex) [7]
 (forward_variance_deviation_normalshifted.tex)
 (backward_variance_deviation_normalshifted.tex) [8] (uniform.tex) (normal.tex)
-[9] (shifteduniform.tex) (shiftednormal.tex) [10] [11] [12] [13]
+[9] (shifteduniform.tex) (shiftednormal.tex) [10] [11] [12] [13] [14]
 (A Note on SIREN.aux) ) 
 Here is how much of TeX's memory you used:
  22918 strings out of 480241
  597987 string characters out of 2890059
- 2381259 words of memory out of 3000000
+ 2395411 words of memory out of 3000000
  39082 multiletter control sequences out of 15000+600000
  407886 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -588,9 +588,9 @@ lic/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
 10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "A Note on SIREN.pdf" (13 pages, 997961 bytes).
+Output written on "A Note on SIREN.pdf" (14 pages, 1000011 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
+ 103 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
